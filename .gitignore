@@ -20,8 +20,8 @@ style.min.css
 # Ignore le fichier DS_Store
 !wp-content/.DS_Store
 !wp-content/themes/.DS_Store
-!wp-content/themes/basquiat/.DS_Store
-!wp-content/themes/basquiat/assets/.DS_Store
-!wp-content/themes/basquiat/assets/.DS_Store
+!wp-content/themes/chefdoeuvres/.DS_Store
+!wp-content/themes/chefdoeuvres/assets/.DS_Store
+!wp-content/themes/chefdoeuvres/assets/.DS_Store
 
 node_modules
