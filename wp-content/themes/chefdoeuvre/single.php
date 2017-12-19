@@ -1,5 +1,18 @@
-<?php get_header(); //appel du template header.php  ?>
+<?php get_header();
+/*
+ * Template Name: Featured Article
+ * Template Post Type: post, page, product
+ */
 
+?>
+
+<div class="container">
+    <div class="col-lg-5 col-md-12">
+        <div id="waveform">
+            <div class="btn btn-primary play">Play/pause</div>
+        </div>
+    </div>
+</div>
 <div class="container">
 
     <?php
@@ -43,5 +56,16 @@
 
 
 </div><!-- /content -->
+<div class="container-fluid pl-0 pr-0">
+    <div id="arrow"></div>
+    <div class="item-slider">
+        <img class="img-fluid pl-2 pr-2" style="max-width: 900px; max-height: 500px" src="<?php the_field('slide-image-1'); ?>" alt="">
+        <img class="img-fluid pl-2 pr-2" style="max-width: 900px; max-height: 500px" src="<?php the_field('slide-image-2'); ?>" alt="">
+        <img class="img-fluid pl-2 pr-2" style="max-width: 900px; max-height: 500px" src="<?php the_field('slide-image-3'); ?>" alt="">
+        <img class="img-fluid pl-2 pr-2" style="max-width: 900px; max-height: 500px" src="<?php the_field('slide-image-4'); ?>" alt="">
+        <img class="img-fluid pl-2 pr-2" style="max-width: 900px; max-height: 500px" src="<?php the_field('slide-image-5'); ?>" alt="">
+    </div>
+</div>
+
 
 <?php get_footer(); //appel du template footer.php ?>
