@@ -1,0 +1,598 @@
+.postid-80{
+  overflow-x: hidden;
+}
+.bg-home {
+  position: relative;
+  background-color: #CCC;
+}
+/* Video overlay and content */
+
+.video-hero--content {
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  margin: 150px 0;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+
+
+.page-width {
+  width: 92%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.jquery-background-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .jquery-background-video {
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+.js .jquery-background-video.is-visible {
+  opacity: 1;
+}
+
+/**
+ * Pause/play button
+ */
+.jquery-background-video-pauseplay {
+  position: absolute;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  cursor: pointer;
+  outline: none !important;
+}
+.jquery-background-video-pauseplay span {
+  display: none;
+}
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.jquery-background-video-pauseplay.play:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+  border-top: 10px solid #FFF;
+  border-bottom: 10px solid #FFF;
+  border-left: 5px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:after {
+  left: 10px;
+}
+
+
+.article__intro{
+  height: 790px;
+  background-size: cover;
+  &:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0,0,0,0.67);
+    top: 0;
+    left: 0;
+  }
+}
+.article__hero{
+  height: 400px;
+  background: #28A3B1;
+  text-align: center;
+  transform: translateY(-70%);
+  z-index: 3;
+  @media screen and (max-width: 640px){
+    height: 550px;
+    transform: translateY(-30%);
+  }
+  h1{
+    margin-top: 10%;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 60px;
+    color: $white;
+    @media screen and (max-width: 640px) {
+      font-size: 48px;
+    }
+  }
+  p{
+    font-family: $paragraph;
+    font-size: 1.2rem;
+    letter-spacing: -0.18px;
+    line-height: 30px;
+    color: $white;
+  }
+}
+.article__about{
+  height: 600px;
+  background: #FAFAFA;
+}
+.article__bolivie{
+  padding-top:7%;
+  text-align: center;
+  h2{
+    font-family: $fat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  ul{
+    list-style-type: none;
+    li{
+      font-family: $paragraph;
+      font-size: 1rem;
+    }
+  }
+}
+.article__bolivieImage{
+  background-size: cover;
+  height: 600px;
+  @media screen and (max-width: 640px) {
+    height: 200px;
+  }
+}
+.article__origins{
+  padding-top: 10%;
+  .article__originsTitle {
+    text-transform: uppercase;
+    margin-left: 5%;
+    font-family: $fat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    &:before {
+      content: '';
+      height: 3px;
+      width: 100px;
+      background-color: #28A3B1;
+      position: absolute;
+      margin-right: 5%;
+      transform: translate(-150%,15px);
+      @media screen and (max-width: 640px) {
+        transform: translate(-110%,15px);
+      }
+    }
+  }
+  h1{
+    font-family: $title;
+    font-weight: 700;
+    font-size: 60px;
+    @media screen and (max-width: 640px){
+      font-size: 48px;
+    }
+  }
+}
+.article__timeline {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.article__timelineMobile{
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position: -67px;
+  height: auto;
+  padding-top: 15%;
+  padding-left: 15%;
+  text-align: left;
+  @media screen and (max-width: 10240px){
+    display: block;
+  }
+  @media screen and (min-width: 1024px){
+    display: none;
+  }
+  p{
+    /* Le peuple andin Uru: */
+    font-family: $paragraph;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing: -0.15px;
+    line-height: 25px;
+  }
+}
+.article__timelineOne{
+  padding-top: 10%;
+  text-align: right;
+  transform: translateY(20%);
+  h2{
+    font-family: $title;
+    color: #09D7C9;
+    font-size: 42px;
+  }
+}
+.article__timelineTwo{
+  h2{
+    font-family: $title;
+    color: #F2A300;
+    font-size: 42px;
+  }
+}
+.article__timelineThree{
+  text-align: right;
+  margin-top: -15%;
+  transform: translateY(30%);
+  h2{
+    font-family: $title;
+    color: #DC0073;
+    font-size: 42px;
+  }
+}
+.article__timelineFour{
+  h2{
+    font-family: $title;
+    color: #0957EF;
+    font-size: 42px;
+  }
+}
+.article__timelineOneMobile{
+  padding-top: 15%;
+  h2{
+    font-family: $title;
+    color: #09D7C9;
+    font-size: 28px;
+  }
+}
+.article__timelineTwoMobile{
+  h2{
+    font-family: $title;
+    color: #F2A300;
+    font-size: 28px;
+  }
+}
+.article__timelineThreeMobile{
+  margin-top: -5%;
+  h2{
+    font-family: $title;
+    color: #DC0073;
+    font-size: 28px;
+  }
+}
+.article__timelineFourMobile{
+  h2{
+    font-family: $title;
+    color: #0957EF;
+    font-size: 28px;
+  }
+}
+.next-arrow{
+  position: absolute;
+  top:50%;
+  right: 1%;
+  outline: none;
+}
+.prev-arrow{
+  position: absolute;
+  top:50%;
+  left:1%;
+  z-index: 1;
+  outline: none;
+}
+.article__quote{
+  height: 550px;
+  background: #F9F9F9;
+  @media screen and (max-width: 640px){
+    height: auto;
+  }
+}
+.article__quoteText{
+  text-align: center;
+  h3{
+    font-family: $title;
+    font-weight: 700i;
+    font-size: 30px;
+    color: #212121;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 51px;
+    @media screen and (max-width: 640px){
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}
+.article__quoteLine{
+  height: 100px;
+  width: 3px;
+  background: #28A3B1;
+}
+.article__deroulementOne{
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+}
+.article__deroulementTwo{
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+  transform: translateY(-350px);
+  @media screen and (max-width: 640px){
+    transform: translateY(0);
+  }
+}
+.article__sixd {
+  transform: translateY(-80%);
+  @media screen and (max-width: 640px){
+    transform: translateY(0);
+  }
+  h3 {
+    &:before {
+      content: '';
+      height: 3px;
+      width: 100px;
+      background-color: #28A3B1;
+      position: absolute;
+      margin-right: 5%;
+      transform: translate(-150%, 15px);
+      @media screen and (max-width: 640px) {
+        transform: translate(-110%,15px);
+      }
+    }
+  }
+}
+.article__stats{
+  height: auto;
+  background: $grey;
+  text-align: center;
+  @media screen and (max-width: 640px){
+    height: auto;
+  }
+}
+.article__statsElements{
+  padding-top: 5%;
+}
+.black__section{
+  background: $black;
+}
+.article__blackWrap1{
+  padding-top: 5%;
+  z-index: 2;
+  img{
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+  }
+}
+.article__bwtext{
+  padding-top: 10%;
+  h2{
+    color: #FAFAFA;
+  }
+  p{
+    color: #FAFAFA;
+    letter-spacing: -0.18px;
+    line-height: 30px;
+  }
+}
+.article__blackWrap2{
+  padding-top: 5%;
+  z-index: 1;
+  transform: translateY(-50%);
+  @media screen and (max-width: 640px){
+    transform: translateY(0);
+  }
+  img{
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+  }
+}
+.player {
+  $size : 100px;
+
+  width: $size;
+  height: $size;
+  position: relative;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #fff;
+    transition:.1s;
+  }
+  &:before {
+    left: 0;
+    top: 0;
+    height: $size / 2;
+    border-width: $size / 4 $size / 2 $size / 4 $size / 2;
+  }
+  &:after {
+    height: 0;
+    border-width: $size / 4 0 $size / 4 $size / 2;
+  }
+  &.paused {
+    &:before {
+      height: 50px;
+      border-width: 0 0 0 20px;
+    }
+    &:after {
+      left: 26px;
+      top: 0;
+      height: 50px;
+      border-width: 0 0 0 20px;
+    }
+  }
+}
+.article__bwtext2{
+  padding-top: 10%;
+  h3{
+    color: #FAFAFA;
+    &:before {
+      content: '';
+      height: 3px;
+      width: 100px;
+      background-color: #28A3B1;
+      position: absolute;
+      margin-right: 5%;
+      transform: translate(-150%, 15px);
+      @media screen and (max-width: 640px) {
+        transform: translate(-110%,15px);
+      }
+    }
+  }
+  h2{
+    color: #FAFAFA;
+  }
+  p{
+    color: #FAFAFA;
+    letter-spacing: -0.18px;
+    line-height: 30px;
+  }
+}
+.article__bwvideo1{
+  overflow: hidden;
+  height: 350px;
+  z-index: 2;
+}
+.article__bwvideo2{
+  overflow: hidden;
+  height: 350px;
+  transform: translateY(-20%);
+  z-index: 1;
+}
+.article__mask{
+  transform: translateY(50%);
+  @media screen and (max-width: 1024px){
+    transform: translateY(0);
+  }
+}
+.article__quote2{
+  height: 550px;
+  background: #F9F9F9;
+  padding-top: 10%;
+  @media screen and (max-width: 640px){
+    height: auto;
+  }
+}
+.article__concours{
+  background-size: cover;
+  height: 90vh;
+  margin-bottom: 10%;
+  @media screen and (max-width: 640px){
+    height: 150vh;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 90vh;
+    left: 0;
+    background-image: linear-gradient(-168deg, rgba(62,208,217,0.85) 1%, rgba(29,163,178,0.85) 78%);
+    @media screen and (max-width: 640px){
+      height: 150vh;
+    }
+  }
+  h3{
+    font-size: 24px;
+    padding-top: 20%;
+    color: $white;
+  }
+  .article__share1{
+    font-size: 36px;
+    padding-top: 5%;
+    line-height: 50px;
+    color: $white;
+    @media screen and (max-width: 640px){
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .article__share2{
+    font-size: 60px;
+    text-align: right;
+    transform: translateY(-50%);
+    color: $white;
+    @media screen and (max-width: 640px){
+      font-size: 40px;
+      transform: translateY(0);
+    }
+  }
+  .article__share3{
+    font-size: 25px;
+    color: $white;
+    @media screen and (max-width: 640px){
+      font-size: 1rem;
+    }
+  }
+}
+.article__iphone{
+  padding-top: 5%;
+  @media screen and (max-width: 640px){
+    display: none;
+  }
+}
+.article__compCard{
+  height: 300px;
+  background: $white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+}
+.article__compCard{
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  p{
+    padding-top: 5%;
+    padding-left: 1%;
+  }
+}
+.article__iphoneMobile{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 75%;
+  margin: auto;
+  @media screen and (min-width: 640px){
+    width: 15%;
+  }
+}
+.btn_color {
+  background-color: #1DA3B2;
+  border-radius: 2px;
+  color: #fff;
+}

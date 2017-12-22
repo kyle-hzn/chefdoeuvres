@@ -14,4 +14,5 @@
     foreach ( glob( THEME_PATH . "/inc/*.php" ) as $file ) {
         include_once $file;
     }
+
 ?>

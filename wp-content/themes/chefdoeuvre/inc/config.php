@@ -82,6 +82,3 @@ function firstPixel_theme_support() {
     ) );
 }
 add_action( 'after_setup_theme', 'firstPixel_theme_support' );
-
-
-register_sidebar();

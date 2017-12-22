@@ -18,22 +18,13 @@ wp_enqueue_script('main_js');
 
 
 // enregistrement des styles
-wp_register_style( 'google_font_Abril', 'https://fonts.googleapis.com/css?family=Abril+Fatface' );
-wp_register_style( 'google_font_Poppins', 'https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i' );
-wp_enqueue_style( 'google_font_Abril' );
-wp_enqueue_style( 'google_font_Poppins' );
+wp_register_style( 'google_font_Playfair', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,700i' );
+wp_register_style( 'google_font_Open', 'https://fonts.googleapis.com/css?family=Open+Sans' );
+wp_enqueue_style( 'google_font_Playfair' );
+wp_enqueue_style( 'google_font_Open' );
 
-wp_register_style( 'google_font_Monsterrat', "https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" );
+wp_register_style( 'google_font_Monsterrat', "https://fonts.googleapis.com/css?family=Montserrat:600,700" );
 wp_enqueue_style( 'google_font_Montserrat' );
-
-
-
-
-wp_register_style( 'bootstrap_style', CSS_URL.'/bootstrap.min.css' );
-wp_enqueue_style( 'bootstrap_style' );
-
-
-
 
 
 // enregistrement des styles

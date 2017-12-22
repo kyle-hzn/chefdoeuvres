@@ -1,0 +1,43 @@
+.footer{
+  height: auto;
+  background: $white;
+  text-align: center;
+  @media screen and (max-width: 640px){
+    padding-top: 30%;
+  }
+}
+.logo__footer{
+  margin-bottom: 5%;
+}
+.menu__footer{
+  list-style-type: none;
+  display: flex;
+  li{
+    width: 100%;
+    a{
+      text-decoration: none;
+      font-family: $paragraph;
+      font-size: 18px;
+      color: $black;
+    }
+  }
+}
+.footer__icons{
+  text-align: center;
+  p{
+    color: #1AA3B2;
+    text-align: center;
+  }
+}
+.footer__iconsBloc{
+  text-align: center;
+}
+.socials{
+  padding-top: 5%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  li{
+    padding-right: 2%;
+  }
+}

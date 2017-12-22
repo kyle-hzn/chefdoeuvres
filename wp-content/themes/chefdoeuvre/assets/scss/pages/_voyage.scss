@@ -1,0 +1,25 @@
+.competition__bg{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  &:before{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    content: '';
+    background: rgba(0,0,0,0.30);
+    z-index: 1;
+  }
+  h2{
+    padding-top: 20%;
+    color: $white;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+}
+.title_cc {
+  font-size: 1rem;
+  color: #1DA3B2;
+}

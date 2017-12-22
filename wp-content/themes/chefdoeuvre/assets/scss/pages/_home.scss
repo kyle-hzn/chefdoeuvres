@@ -1,3 +1,235 @@
+//general
 body{
   background: #FAFAFA;
+}
+.page-id-212{
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: $title;
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.bg-home {
+  position: relative;
+  background-color: #CCC;
+
+  .bg-home-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    overflow: hidden;
+    &:before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      content: '';
+      background: rgba(0,0,0,0.30);
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .bg-home-wrapper {
+    position: relative;
+    h1 {
+      font-size: 60px;
+      color: #fff;
+      @media screen and (max-width: 640px) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .bg-home-content {
+    display: flex;
+    min-height: 600px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.content_calandar_item_o {
+  @media screen and (max-width: 640px){
+    display: none;
+  }
+  h1 {
+    color: #fff;
+    margin: 10px;
+  }
+  h3{
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+  }
+  .img_bg {
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.25);
+      content: "";
+    }
+  }
+  .pays_calendar {
+    height: 40px;
+    width: 160px;
+    background-color: #1da3b2;
+    font-family: $fat;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 4px;
+  }
+}
+
+.content-desc {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .title_desc {
+    color: #1da3b2;
+    margin-bottom: 30px;
+    @media screen and (max-width: 640px) {
+      font-size: 30px;
+    }
+  }
+  .text_desc {
+
+  }
+}
+
+
+
+
+
+.content_calandar_item {
+  @media screen and (max-width: 640px){
+    display: none;
+  }
+  margin-top: 30px;
+  h3 {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+  }
+
+  .img_bg {
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.25);
+      content: "";
+    }
+  }
+  .pays_calendar {
+    height: 40px;
+    width: 160px;
+    background-color: #1da3b2;
+    font-family: $fat;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 4px;
+  }
+}
+
+.pos-absolute {
+  position: absolute;
+
+  &.pos-top {
+    top: 0;
+  }
+  &.pos-bottom {
+    bottom: 0;
+  }
+  &.pos-left {
+    left: 0;
+  }
+  &.pos-right {
+    right: 0;
+  }
+}
+
+.nb_22 {
+  height: 150px;
+}
+
+.img_map {
+  position: relative;
+  margin: auto;
+  height: 590px;
+  background-size: cover;
+  @media screen and (max-width: 640px){
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.btn_sub {
+  background-color: #1DA3B2;
+  color: #fff;
+  border-color: #1DA3B2;
+  height: 39px;
+}
+
+.bg_bois {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  margin-top: 100px;
+
+  h3 {
+    color: #1DA3B2;
+  }
+
+  p {
+    color: #fefefe;
+  }
+
+  .img_travel {
+    height: 300px;
+  }
+
+  .btn_color {
+    background-color: #1DA3B2;
+    border-radius: 2px;
+    color: #fff;
+  }
+
+}
+.item-sliderMobile{
+  @media screen and (max-width: 640px){
+    display: block;
+  }
+  @media screen and (min-width: 640px){
+    display: none;
+  }
+}
+.slick-slide{
+  height: auto;
 }

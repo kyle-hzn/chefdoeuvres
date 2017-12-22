@@ -47,13 +47,6 @@ Template Name:  Articles
             }
 
             ?>
-            <div class="col-lg-2">
-                <?php
-                    if ( dynamic_sidebar('SidebarChef') ) :
-                    else :
-                        ?>
-                <?php endif; ?>
-            </div>
         </div>
     </div>
     <div class="row pagination">

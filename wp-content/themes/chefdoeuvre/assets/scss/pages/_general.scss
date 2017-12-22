@@ -1,0 +1,28 @@
+$title : Playfair Display;
+$paragraph : Open sans;
+$fat : Montserrat;
+
+$grey : #F9F9F9;
+$black : #212121;
+$white : #FEFEFE;
+
+p{
+  font-family: $paragraph;
+  font-size: 1.2rem;
+  letter-spacing: -0.18px;
+  line-height: 30px;
+  color: $black;
+}
+h3{
+  font-family: $fat;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h2{
+  font-family: $title;
+  font-weight: 700;
+  font-size: 60px;
+  @media screen and (max-width: 640px){
+    font-size: 40px;
+  }
+}
